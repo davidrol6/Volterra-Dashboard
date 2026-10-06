@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error-container":"#93000a","on-tertiary":"#003824","on-background":"#dfe2f1","primary":"#4cd7f6","on-secondary":"#3c0091","surface-container-high":"#262a35","on-error-container":"#ffdad6","on-surface-variant":"#bcc9cd","on-error":"#690005","primary-fixed":"#acedff","surface":"#0f131d","on-secondary-container":"#c4abff","on-primary-fixed-variant":"#004e5c","tertiary":"#4edea3","secondary-container":"#571bc1","secondary":"#d0bcff","on-tertiary-fixed":"#002113","error":"#ffb4ab","surface-container-low":"#171b26","outline-variant":"#3d494c","surface-variant":"#313540","on-surface":"#dfe2f1","inverse-on-surface":"#2c303b","primary-fixed-dim":"#4cd7f6","secondary-fixed-dim":"#d0bcff","primary-container":"#06b6d4","tertiary-container":"#1bbd85","surface-container":"#1c1f2a","outline":"#869397","surface-dim":"#0f131d","background":"#0f131d","secondary-fixed":"#e9ddff","on-tertiary-fixed-variant":"#005236","surface-container-lowest":"#0a0e18","on-secondary-fixed-variant":"#5516be","on-tertiary-container":"#00452e","on-primary":"#003640","on-primary-container":"#00424f","surface-bright":"#353944","surface-tint":"#4cd7f6","tertiary-fixed":"#6ffbbe","tertiary-fixed-dim":"#4edea3","surface-container-highest":"#313540","on-secondary-fixed":"#23005c","inverse-surface":"#dfe2f1","inverse-primary":"#00687a","on-primary-fixed":"#001f26"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xs":"0.25rem","space-lg":"1rem","space-xl":"1.5rem","gutter-desktop":"1rem","margin-desktop":"1.5rem","space-md":"0.75rem",margin:"1rem",gutter:"0.75rem","space-sm":"0.5rem"},fontFamily:{"data-metric":["JetBrains Mono"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-lg":["Inter"],"body-sm":["Inter"],"label-code-lg":["JetBrains Mono"],"label-code-sm":["JetBrains Mono"],"headline-xl":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"label-code-md":["JetBrains Mono"]},fontSize:{"data-metric":["1.75rem",{lineHeight:"2rem",letterSpacing:"-0.03em",fontWeight:"700"}],"body-md":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}],"headline-lg-mobile":["1.25rem",{lineHeight:"1.625rem",fontWeight:"600"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}],"body-sm":["0.75rem",{lineHeight:"1.125rem",fontWeight:"400"}],"label-code-lg":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"-0.01em",fontWeight:"500"}],"label-code-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.02em",fontWeight:"500"}],"headline-xl":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.025em",fontWeight:"700"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.015em",fontWeight:"600"}],"body-lg":["1rem",{lineHeight:"1.5rem",fontWeight:"400"}],"label-code-md":["0.75rem",{lineHeight:"1rem",letterSpacing:"0em",fontWeight:"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md"><div class="px-space-lg pt-space-lg pb-space-sm flex items-center gap-space-md"><img alt="Syntropic VR Telemetry Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U7W30-ENBV0a5HfsF_Hij5FhUST-X7dy3m1LDhzwsYP9W0N27wzaEiCrjymoeeE1E8F2bEQepJL-eX8uv56pC70qUbZXnQcmKxfBZQMMYdfi-DOAfI1exR_KKDXE3MY2NpnvZ5-jrhcEZPdym2niTcgHTMfjk3HgltPseJbQphe5WS0YLezYbBsholHAh7PVNir8Vr6V3OyFpIRGwLJIhacqSrpfSICR5bpuaEMqjDjBM251ZHGyQ5IKa-"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Syntropic VR</span><span class="font-label-code-sm text-label-code-sm text-primary tracking-widest uppercase">Math Labs • Telemetry</span></div></div><div class="px-space-md"><div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-code-sm text-label-code-sm text-on-surface-variant flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>MongoDB Cluster</span><span class="font-label-code-sm text-label-code-sm text-tertiary font-semibold">1.2ms</span></div><div class="flex items-center justify-between pt-space-xs"><span class="font-label-code-sm text-label-code-sm text-on-surface-variant">VR Engine Status</span><span class="font-label-code-sm text-label-code-sm text-primary">v2.4 Active</span></div></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-sm" data-active-classes="bg-surface-container-high text-primary font-semibold shadow-inner"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview-cockpit" href="#"><span class="material-symbols-outlined text-primary text-[20px]">vital_signs</span><span>Overview &amp; Cockpit</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-inspector" href="#"><span class="material-symbols-outlined text-secondary text-[20px]">troubleshoot</span><span>Step Inspector</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="mongodb-logs-raw-query" href="#"><span class="material-symbols-outlined text-tertiary text-[20px]">database</span><span>MongoDB Logs &amp; Raw Query</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="vr-user-telemetry" href="#"><span class="material-symbols-outlined text-primary-fixed text-[20px]">view_in_ar</span><span>VR User Telemetry</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg transition-colors bg-surface-container-high text-primary font-semibold shadow-inner" data-path="comparador-lotka-volterra" href="#"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">alt_route</span><span>Comparador Lotka-Volterra</span></a></nav></div><div class="p-space-md bg-surface-container-low/70 m-space-md rounded-lg flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-code-sm text-label-code-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-primary">storage</span>Storage Metric</span><span class="font-label-code-sm text-label-code-sm text-primary font-medium">19.2%</span></div><div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden"><div class="bg-primary h-full rounded-full" style="width: 19.28%"></div></div><div class="flex items-center justify-between"><span class="font-label-code-sm text-label-code-sm text-on-surface-variant font-data-metric">48.2 GB / 250 GB</span><span class="font-label-code-sm text-label-code-sm text-tertiary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Cluster Healthy</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-lg"><span class="font-label-code-sm text-label-code-sm text-on-surface-variant uppercase tracking-wider">Active Sim:</span><select class="bg-transparent text-primary font-label-code-sm text-label-code-sm focus:outline-none cursor-pointer pr-space-xs"><option class="bg-surface-container text-on-surface" value="Sim-2024-EulerNavier-9B">Sim-2024-EulerNavier-9B</option><option class="bg-surface-container text-on-surface" value="Quantum-Turbulence-04">Quantum-Turbulence-04</option><option class="bg-surface-container text-on-surface" value="LorenzAttractor-4D">LorenzAttractor-4D</option></select></div><div class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span><span class="font-label-code-sm text-label-code-sm text-on-surface font-semibold">Running</span><span class="text-outline font-label-code-sm text-label-code-sm">•</span><span class="font-label-code-sm text-label-code-sm text-tertiary">Ingesting 24.8k docs/s</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[18px]">search</span><input class="bg-surface-container-lowest text-on-surface font-body-sm text-body-sm pl-9 pr-14 py-space-xs rounded-lg focus:outline-none focus:ring-1 focus:ring-primary w-64 transition-all" placeholder="Query simulation state..." type="text"/><kbd class="absolute right-space-sm font-label-code-sm text-label-code-sm bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant shadow-sm">Ctrl+K</kbd></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-body-md text-body-md font-semibold text-on-surface leading-tight">Dra. Elena Vasquez</span><span class="font-label-code-sm text-label-code-sm text-primary">Lead Physicist</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9XZUiR2isqXrZGSZ4dkd2HpXyCzGv5tYhxMPiob8gVr4x2tYPRodrt5_UCfR0tVYpTUn4i35WmvvODt9c5qT9I7SlqAgHTA96tpGwVlvch3hpFA0zIVte1yRKzfsIdbP2Bfa8H9mOGqTq5QXdHBDeFPIaStGO4ZX6PomY7F49HsQo2mEMCvcO4o9gbWuabEcZY8rw3C90vPbEv8AhegMCjaK8PaWV6XaugPrT75UI3l81mPvdULpW4Q"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs behind key analytical areas -->
+<div class="relative w-full overflow-hidden px-space-md py-space-sm space-y-space-md">
+<div class="pointer-events-none absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary/10 blur-3xl"></div>
+<div class="pointer-events-none absolute top-48 right-12 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl"></div>
+<!-- Header & Mission Control Bar -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col xl:flex-row xl:items-center xl:justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-code-sm text-label-code-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+            CLUSTER ATLAS-PRIMARY-01 : SYNCED
+          </span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant bg-surface-container px-space-sm py-0.5 rounded">
+            ODE SOLVER: DORMAND-PRINCE 8(5,3) RK
+          </span>
+<span class="font-label-code-sm text-label-code-sm text-secondary bg-secondary-container/30 px-space-sm py-0.5 rounded">
+            DIM: 2-SPECIES SE(2)
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+          Comparador de Dinámica Poblacional Lotka-Volterra — Competencia Interespecie
+        </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-4xl">
+          Análisis de simulaciones ecológicas con espacio de fases 2D e isoclinas nulas. Selecciona corrida y modelo para comparar competencia y predación.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-high rounded-lg px-space-sm py-space-xs border border-surface-container-highest">
+<span class="material-symbols-outlined text-[18px] text-primary">pin</span>
+<input class="bg-transparent text-on-surface placeholder:text-on-surface-variant font-label-code-sm text-label-code-sm w-36 sm:w-44 focus:outline-none" id="simulation-code-input" placeholder="Codigo de simulacion" type="text"/>
+</div>
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-body-md text-body-md font-semibold px-space-md py-space-xs rounded-lg transition-all shadow-[0_0_12px_rgba(6,182,212,0.35)] active:scale-95" id="btn-simulate">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+<span id="btn-simulate-text">Cargar Simulacion</span>
+</button>
+<button class="flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-md text-body-md px-space-md py-space-xs rounded-lg transition-all active:scale-95" id="btn-export-bson">
+<span class="material-symbols-outlined text-tertiary text-[18px]">file_download</span>
+<span>Download Excel</span>
+</button>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant bg-surface-container px-space-sm py-0.5 rounded" id="fetch-status">Estado inicial: introduce un codigo</span>
+</div>
+</div>
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-md grid grid-cols-1 lg:grid-cols-12 gap-space-sm">
+<div class="lg:col-span-4">
+<label class="block text-[11px] font-label-code-sm text-label-code-sm text-on-surface-variant mb-1" for="run-selector">Corrida</label>
+<select class="w-full rounded-lg bg-surface-container border border-surface-container-high text-on-surface px-space-sm py-2 text-[12px] font-label-code-sm" id="run-selector">
+<option value="">Sin corridas cargadas</option>
+</select>
+</div>
+<div class="lg:col-span-4">
+<label class="block text-[11px] font-label-code-sm text-label-code-sm text-on-surface-variant mb-1" for="model-selector">Modelo</label>
+<select class="w-full rounded-lg bg-surface-container border border-surface-container-high text-on-surface px-space-sm py-2 text-[12px] font-label-code-sm" id="model-selector">
+<option value="auto">Auto (segun equation)</option>
+<option value="competition">Lotka-Volterra Competencia</option>
+<option value="predation">Lotka-Volterra Predacion</option>
+</select>
+</div>
+<div class="lg:col-span-4 bg-surface-container rounded-lg px-space-sm py-2 border border-surface-container-high flex flex-col justify-center">
+<span class="text-[11px] font-label-code-sm text-label-code-sm text-on-surface-variant">Ecuacion activa</span>
+<span class="text-[12px] font-label-code-sm text-label-code-sm text-primary font-semibold" id="active-model-name">-</span>
+<span class="text-[11px] font-label-code-sm text-label-code-sm text-on-surface" id="active-model-equation">-</span>
+</div>
+</section>
+<!-- Parallel Scenario Selector & Multi-thread Playback Scrubber -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Scenario Selector Cards -->
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-4 gap-space-sm" id="scenario-section">
+<!-- Scenario A -->
+<button class="scenario-btn active text-left bg-surface-container p-space-sm rounded-lg flex flex-col justify-between transition-all group shadow-inner" data-scenario="A">
+<div class="flex items-center justify-between">
+<span class="font-label-code-sm text-label-code-sm text-primary font-bold">ESCENARIO A</span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary flex items-center gap-1 bg-surface-container-lowest px-1.5 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Atractor
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">Coexistencia Estable</p>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant font-data-metric mt-0.5 text-[10px]">
+            α12 &lt; K1/K2 · α21 &lt; K2/K1
+          </span>
+<div class="mt-2 flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant border-t border-transparent pt-1">
+<span class="text-primary font-data-metric">E*(624, 381)</span>
+<span class="text-tertiary font-semibold">λ &lt; 0 (Stable)</span>
+</div>
+</button>
+<!-- Scenario B -->
+<button class="scenario-btn text-left bg-surface-container-low hover:bg-surface-container p-space-sm rounded-lg flex flex-col justify-between transition-all group" data-scenario="B">
+<div class="flex items-center justify-between">
+<span class="font-label-code-sm text-label-code-sm text-secondary font-bold">ESCENARIO B</span>
+<span class="font-label-code-sm text-label-code-sm text-error flex items-center gap-1 bg-surface-container-lowest px-1.5 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Extinción Sp2
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">Exclusión Competitiva</p>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant font-data-metric mt-0.5 text-[10px]">
+            α12 &lt; K1/K2 · α21 &gt; K2/K1
+          </span>
+<div class="mt-2 flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant pt-1">
+<span class="text-primary font-data-metric" id="scenario-b-dynamic">N1/N2 segun datos</span>
+<span class="text-error font-semibold">Dominio Sp1</span>
+</div>
+</button>
+<!-- Scenario C -->
+<button class="scenario-btn text-left bg-surface-container-low hover:bg-surface-container p-space-sm rounded-lg flex flex-col justify-between transition-all group" data-scenario="C">
+<div class="flex items-center justify-between">
+<span class="font-label-code-sm text-label-code-sm text-on-secondary-container font-bold">ESCENARIO C</span>
+<span class="font-label-code-sm text-label-code-sm text-secondary-fixed flex items-center gap-1 bg-surface-container-lowest px-1.5 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> Extinción Sp1
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">Exclusión Competitiva</p>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant font-data-metric mt-0.5 text-[10px]">
+            α12 &gt; K1/K2 · α21 &lt; K2/K1
+          </span>
+<div class="mt-2 flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant pt-1">
+<span class="text-secondary-fixed font-data-metric">N1 -&gt; 0</span>
+<span class="text-on-secondary-container font-semibold">Dominio Sp2</span>
+</div>
+</button>
+<!-- Scenario D -->
+<button class="scenario-btn text-left bg-surface-container-low hover:bg-surface-container p-space-sm rounded-lg flex flex-col justify-between transition-all group" data-scenario="D">
+<div class="flex items-center justify-between">
+<span class="font-label-code-sm text-label-code-sm text-tertiary font-bold">ESCENARIO D</span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary flex items-center gap-1 bg-surface-container-lowest px-1.5 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Silla Inestable
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">Sensibilidad Inicial</p>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant font-data-metric mt-0.5 text-[10px]">
+            α12 &gt; K1/K2 · α21 &gt; K2/K1
+          </span>
+<div class="mt-2 flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant pt-1">
+<span class="text-tertiary font-data-metric">Separatriz</span>
+<span class="text-tertiary font-semibold">Biestable</span>
+</div>
+</button>
+</div>
+<!-- Synchronized Playback Control Scrubber -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between gap-space-xs" id="playback-panel">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center transition-colors" id="btn-play-pause">
+<span class="material-symbols-outlined text-[18px]" id="play-icon">play_arrow</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-bright text-on-surface flex items-center justify-center transition-colors" id="btn-reset">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+</button>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-space-sm py-1 rounded">
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Generación:</span>
+<span class="font-label-code-sm text-label-code-sm text-primary font-bold" id="time-display">t = 48.2</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">/ 100</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-code-sm text-label-code-sm text-tertiary bg-tertiary-container/30 text-tertiary-fixed px-1.5 py-0.5 rounded">Δt = 0.01</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">8 Thds Sinc.</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-code-sm text-label-code-sm text-on-surface-variant">
+<span>t=0.00 (Inoculación)</span>
+<span class="text-primary font-semibold">Transiente Rápido</span>
+<span>t=100.00 (Asintótico)</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" id="time-scrubber" max="100" min="0" step="0.1" type="range" value="48.2"/>
+</div>
+</div>
+</div>
+</div>
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Resultados Paso a Paso</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vista paginada de la simulacion activa sin descargar Excel.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-code-sm text-label-code-sm" id="steps-prev">Prev</button>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant" id="steps-page-label">Pagina 1</span>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-code-sm text-label-code-sm" id="steps-next">Next</button>
+</div>
+</div>
+<div class="overflow-auto max-h-[320px] rounded-lg border border-surface-container-high">
+<table class="w-full text-left font-label-code-sm text-label-code-sm">
+<thead class="bg-surface-container-high text-on-surface-variant sticky top-0">
+<tr>
+<th class="px-space-sm py-2">Paso</th>
+<th class="px-space-sm py-2">Tiempo</th>
+<th class="px-space-sm py-2">N2</th>
+<th class="px-space-sm py-2">N1</th>
+<th class="px-space-sm py-2">Timestamp UTC</th>
+</tr>
+</thead>
+<tbody class="bg-surface-container-lowest text-on-surface" id="steps-tbody">
+<tr>
+<td class="px-space-sm py-2" colspan="5">Sin datos cargados</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Comparative KPI & Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- KPI 1: Especie 1 (N1) -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-code-sm text-label-code-sm text-primary font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Especie 1 (N1)
+          </span>
+<span class="font-label-code-sm text-label-code-sm text-primary bg-primary/10 px-1 rounded">r1 = 0.72 /d</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-2">
+<span class="font-data-metric text-data-metric text-on-surface" id="kpi-n1">840.4</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant" id="k1-cap-label">/ K1 = 1,000</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden mt-1">
+<div class="h-full bg-primary rounded-full transition-all duration-300" id="bar-n1" style="width: 84.04%"></div>
+</div>
+</div>
+<div class="flex justify-between font-label-code-sm text-label-code-sm text-on-surface-variant pt-1">
+<span>Cap. saturación</span>
+<span class="text-primary font-bold" id="n1-saturation-label">84.0%</span>
+</div>
+</div>
+<!-- KPI 2: Especie 2 (N2) -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-code-sm text-label-code-sm text-secondary font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Especie 2 (N2)
+          </span>
+<span class="font-label-code-sm text-label-code-sm text-secondary bg-secondary-container/20 px-1 rounded">r2 = 0.55 /d</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-2">
+<span class="font-data-metric text-data-metric text-on-surface" id="kpi-n2">412.8</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant" id="k2-cap-label">/ K2 = 800</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden mt-1">
+<div class="h-full bg-secondary rounded-full transition-all duration-300" id="bar-n2" style="width: 51.6%"></div>
+</div>
+</div>
+<div class="flex justify-between font-label-code-sm text-label-code-sm text-on-surface-variant pt-1">
+<span>Cap. saturación</span>
+<span class="text-secondary font-bold" id="n2-saturation-label">51.6%</span>
+</div>
+</div>
+</div>
+<!-- Central Dual Visual Analytics Panels -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Left Column: Phase Portrait & Vector Field -->
+<div class="xl:col-span-6 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-none">Espacio de Fases N1 vs N2 (Phase Portrait)</h2>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Campo Vectorial (Quiver) + Isoclinas Nulas dN/dt = 0</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-0.5 rounded-lg">
+<button class="px-2 py-1 rounded bg-primary text-on-primary font-label-code-sm text-label-code-sm font-semibold" id="btn-view-2d" type="button">2D Plano</button>
+<button class="px-2 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-code-sm text-label-code-sm transition-colors" id="btn-view-3d" type="button">3D Dinamica</button>
+</div>
+</div>
+<!-- Phase Plane SVG Visualization -->
+<div class="relative w-full h-[380px] bg-surface-container-lowest rounded-lg overflow-hidden p-2 flex items-center justify-center" id="phase-view-2d">
+<svg class="w-full h-full" fill="none" id="phase-portrait-svg" viewbox="0 0 520 360" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Grid Pattern -->
+<pattern height="40" id="grid-pattern" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1c1f2a" stroke-width="1"></path>
+</pattern>
+<!-- Gradients for trajectory paths -->
+<lineargradient id="traj-grad-a" x1="0%" x2="100%" y1="100%" y2="0%">
+<stop offset="0%" stop-color="#4cd7f6" stop-opacity="0.3"></stop>
+<stop offset="50%" stop-color="#4cd7f6" stop-opacity="0.8"></stop>
+<stop offset="100%" stop-color="#4edea3" stop-opacity="1"></stop>
+</lineargradient>
+<lineargradient id="traj-grad-b" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#d0bcff" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#acedff" stop-opacity="0.9"></stop>
+</lineargradient>
+<lineargradient id="nullcline-n1-grad" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#06b6d4"></stop>
+<stop offset="100%" stop-color="#4cd7f6"></stop>
+</lineargradient>
+<lineargradient id="nullcline-n2-grad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#d0bcff"></stop>
+<stop offset="100%" stop-color="#571bc1"></stop>
+</lineargradient>
+<!-- Glow Filter for Equilibrium Point -->
+<filter height="200%" id="glow-eq" width="200%" x="-50%" y="-50%">
+<fegaussianblur result="blur" stddeviation="4"></fegaussianblur>
+<femerge>
+<femergenode in="blur"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+</defs>
+<!-- Background Grid -->
+<rect fill="url(#grid-pattern)" height="360" width="520"></rect>
+<!-- Quiver Vector Field (Flow vectors across phase space) -->
+<g opacity="0.35" stroke="#869397" stroke-width="1">
+<!-- Grid of small vector markers -->
+<path d="M 60 300 L 72 294 M 72 294 L 68 293 M 72 294 L 70 298"></path>
+<path d="M 120 300 L 132 292 M 132 292 L 128 291 M 132 292 L 130 296"></path>
+<path d="M 180 300 L 190 290 M 190 290 L 186 289 M 190 290 L 188 294"></path>
+<path d="M 240 300 L 248 288 M 248 288 L 244 287 M 248 288 L 246 292"></path>
+<path d="M 300 300 L 305 285 M 305 285 L 301 285 M 305 285 L 304 289"></path>
+<path d="M 360 300 L 362 284 M 362 284 L 358 285 M 362 284 L 361 288"></path>
+<path d="M 420 300 L 418 285 M 418 285 L 416 289 M 418 285 L 421 289"></path>
+<path d="M 60 240 L 75 236 M 75 236 L 71 234 M 75 236 L 72 240"></path>
+<path d="M 120 240 L 135 232 M 135 232 L 131 230 M 135 232 L 133 236"></path>
+<path d="M 180 240 L 192 228 M 192 228 L 188 227 M 192 228 L 190 232"></path>
+<path d="M 240 240 L 249 224 M 249 224 L 245 224 M 249 224 L 248 228"></path>
+<path d="M 300 240 L 303 220 M 303 220 L 299 221 M 303 220 L 302 225"></path>
+<path d="M 360 240 L 358 218 M 358 218 L 356 222 M 358 218 L 361 222"></path>
+<path d="M 60 180 L 76 178 M 76 178 L 72 175 M 76 178 L 73 181"></path>
+<path d="M 120 180 L 138 174 M 138 174 L 134 172 M 138 174 L 135 177"></path>
+<path d="M 180 180 L 194 170 M 194 170 L 190 169 M 194 170 L 192 173"></path>
+<path d="M 240 180 L 246 166 M 246 166 L 243 167 M 246 166 L 246 170"></path>
+<path d="M 300 180 L 298 162 M 298 162 L 296 166 M 298 162 L 300 166"></path>
+<path d="M 360 180 L 352 165 M 352 165 L 352 170 M 352 165 L 356 168"></path>
+<path d="M 60 120 L 78 122 M 78 122 L 74 120 M 78 122 L 75 125"></path>
+<path d="M 120 120 L 138 120 M 138 120 L 134 118 M 138 120 L 135 123"></path>
+<path d="M 180 120 L 192 118 M 192 118 L 188 118 M 192 118 L 191 122"></path>
+<path d="M 240 120 L 242 115 M 242 115 L 240 118 M 242 115 L 244 118"></path>
+<path d="M 300 120 L 294 115 M 294 115 L 293 119 M 294 115 L 297 118"></path>
+<path d="M 60 60 L 78 68 M 78 68 L 74 65 M 78 68 L 75 71"></path>
+<path d="M 120 60 L 136 70 M 136 70 L 132 68 M 136 70 L 134 73"></path>
+<path d="M 180 60 L 188 74 M 188 74 L 185 73 M 188 74 L 187 77"></path>
+<path d="M 240 60 L 238 78 M 238 78 L 236 81 M 238 78 L 241 80"></path>
+</g>
+<!-- Coordinate Axes -->
+<line stroke="#869397" stroke-width="1.5" x1="45" x2="490" y1="320" y2="320"></line>
+<line stroke="#869397" stroke-width="1.5" x1="45" x2="45" y1="320" y2="25"></line>
+<!-- Axis Labels & Ticks -->
+<text fill="#bcc9cd" font-family="JetBrains Mono" font-size="11" id="phase-x-axis-label" text-anchor="end" x="480" y="338">N1 (X)</text>
+<text fill="#bcc9cd" font-family="JetBrains Mono" font-size="11" id="phase-y-axis-label" x="18" y="32">N2 (Y)</text>
+<text fill="#869397" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="45" y="335">0</text>
+<text fill="#869397" font-family="JetBrains Mono" font-size="9" id="phase-x-mid-label" text-anchor="middle" x="245" y="335">500</text>
+<text fill="#869397" font-family="JetBrains Mono" font-size="9" id="phase-x-max-label" text-anchor="middle" x="445" y="335">1000 (K1)</text>
+<text fill="#869397" font-family="JetBrains Mono" font-size="9" id="phase-y-q1-label" text-anchor="end" x="36" y="240">250</text>
+<text fill="#869397" font-family="JetBrains Mono" font-size="9" id="phase-y-mid-label" text-anchor="end" x="36" y="160">500</text>
+<text fill="#869397" font-family="JetBrains Mono" font-size="9" id="phase-y-max-label" text-anchor="end" x="36" y="65">800 (K2)</text>
+<!-- Nullcline 1: dN1/dt = 0 (K1 to K1/α12) -->
+<line id="nullcline-1" stroke="url(#nullcline-n1-grad)" stroke-dasharray="4 2" stroke-width="2.5" x1="45" x2="445" y1="95" y2="320"></line>
+<text fill="#06b6d4" font-family="JetBrains Mono" font-size="10" font-weight="600" id="nullcline-1-label" x="390" y="275">dN1/dt = 0</text>
+<!-- Nullcline 2: dN2/dt = 0 (K2/α21 to K2) -->
+<line id="nullcline-2" stroke="url(#nullcline-n2-grad)" stroke-dasharray="4 2" stroke-width="2.5" x1="45" x2="475" y1="65" y2="290"></line>
+<text fill="#d0bcff" font-family="JetBrains Mono" font-size="10" font-weight="600" id="nullcline-2-label" x="120" y="85">dN2/dt = 0</text>
+<!-- Simulation Trajectory 1 (Escenario A - Converging to E*) -->
+<path d="M 80 300 Q 150 260 220 210 T 290 195 T 310 198" fill="none" id="phase-trajectory-path" stroke="url(#traj-grad-a)" stroke-linecap="round" stroke-width="3"></path>
+<!-- Alternative Initial Condition Trajectory (From high N2) -->
+<path d="M 120 70 Q 180 120 250 160 T 305 197" fill="none" opacity="0.8" stroke="url(#traj-grad-b)" stroke-dasharray="2 3" stroke-width="2"></path>
+<!-- Stable Equilibrium Node E* Intersection Point with glow -->
+<circle cx="308" cy="197" fill="#4edea3" fill-opacity="0.2" filter="url(#glow-eq)" id="equilibrium-halo" r="14"></circle>
+<circle cx="308" cy="197" fill="#4edea3" id="equilibrium-point" r="7" stroke="#003824" stroke-width="2"></circle>
+<circle cx="308" cy="197" fill="#0f131d" id="equilibrium-center" r="2.5"></circle>
+<!-- E* Label -->
+<g id="equilibrium-label-group" transform="translate(325, 192)">
+<rect fill="#171b26" fill-opacity="0.9" height="24" rx="4" stroke="#313540" stroke-width="1" width="110"></rect>
+<text fill="#4edea3" font-family="JetBrains Mono" font-size="11" font-weight="bold" id="equilibrium-label" x="6" y="16">E* (624, 381)</text>
+</g>
+<!-- Dynamic Current Point on trajectory (Scrubber linked) -->
+<circle cx="260" cy="202" fill="#06b6d4" id="anim-point" r="5" stroke="#ffffff" stroke-width="2">
+<animate attributename="r" dur="2s" repeatcount="indefinite" values="4;7;4"></animate>
+</circle>
+</svg>
+<!-- Floating Inspector Pill inside Phase Portrait -->
+<div class="absolute bottom-3 left-3 bg-surface-container/90 backdrop-blur-md px- space-sm py-1 rounded text-[11px] font-label-code-sm text-label-code-sm text-on-surface-variant flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Vector Tangente dt:</span>
+<span class="text-primary font-bold">[+2.84, -1.15]</span>
+<span class="text-outline">|</span>
+<span class="text-tertiary">Div &lt; 0 (Contractivo)</span>
+</div>
+</div>
+<div class="hidden w-full h-[380px] bg-surface-container-lowest rounded-lg overflow-hidden p-2" id="phase-view-3d">
+<div class="w-full h-full" id="phase-3d-chart"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-label-code-sm text-label-code-sm text-on-surface-variant px-1">
+<div class="flex items-center gap-2">
+<span class="inline-block w-3 h-0.5 bg-primary"></span> <span>Isoclina dN1/dt=0</span>
+<span class="inline-block w-3 h-0.5 bg-secondary ml-2"></span> <span>Isoclina dN2/dt=0</span>
+</div>
+<span class="text-tertiary">Punto Fijo Coexistencia Globalmente Estable</span>
+</div>
+</div>
+<!-- Right Column: Temporal Evolution -->
+<div class="xl:col-span-6 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">show_chart</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-none">Dinámica Temporal N1(t) vs N2(t)</h2>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Evolución generacional con límites asintóticos K</span>
+</div>
+</div>
+<span class="font-label-code-sm text-label-code-sm bg-surface-container text-on-surface-variant px-2 py-0.5 rounded">
+              RK45 Adaptive dt
+            </span>
+</div>
+<!-- Temporal Multi-series Graph SVG -->
+<div class="w-full h-[180px] bg-surface-container-lowest rounded-lg p-2 mt-space-sm relative">
+<canvas class="w-full h-full" id="temporal-chart"></canvas>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-space-sm flex-1">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-code-sm text-label-code-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">tune</span>
+              Parametros Iniciales de la Simulacion
+            </span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary" id="initial-card-code">Sin codigo cargado</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm text-center font-label-code-sm text-label-code-sm">
+<div class="bg-surface-container-low p-space-sm rounded min-h-[84px] flex flex-col justify-center">
+<span class="text-on-surface-variant text-[11px]">alpha</span>
+<div class="font-data-metric text-on-surface text-[16px] font-bold" id="init-alpha">-</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded min-h-[84px] flex flex-col justify-center">
+<span class="text-on-surface-variant text-[11px]">beta</span>
+<div class="font-data-metric text-on-surface text-[16px] font-bold" id="init-beta">-</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded min-h-[84px] flex flex-col justify-center">
+<span class="text-on-surface-variant text-[11px]">gamma</span>
+<div class="font-data-metric text-on-surface text-[16px] font-bold" id="init-gamma">-</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded min-h-[84px] flex flex-col justify-center">
+<span class="text-on-surface-variant text-[11px]">delta</span>
+<div class="font-data-metric text-on-surface text-[16px] font-bold" id="init-delta">-</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded min-h-[84px] flex flex-col justify-center">
+<span class="text-on-surface-variant text-[11px]">k1</span>
+<div class="font-data-metric text-on-surface text-[16px] font-bold" id="init-k1">-</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded min-h-[84px] flex flex-col justify-center">
+<span class="text-on-surface-variant text-[11px]">k2</span>
+<div class="font-data-metric text-on-surface text-[16px] font-bold" id="init-k2">-</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded min-h-[84px] flex flex-col justify-center">
+<span class="text-on-surface-variant text-[11px]">N2 inicial</span>
+<div class="font-data-metric text-on-surface text-[16px] font-bold" id="init-preys">-</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded min-h-[84px] flex flex-col justify-center">
+<span class="text-on-surface-variant text-[11px]">N1 inicial</span>
+<div class="font-data-metric text-on-surface text-[16px] font-bold" id="init-predators">-</div>
+</div>
+</div>
+<div class="mt-space-xs bg-surface-container-lowest p-space-xs rounded flex flex-wrap items-center justify-between text-[11px] font-label-code-sm text-label-code-sm text-on-surface-variant gap-space-xs">
+<span id="init-meta-a">equation: -</span>
+<span id="init-meta-b">delta_t: -</span>
+<span id="init-meta-c">invader: -</span>
+<span id="init-meta-d">stochastic: -</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Simulacion Activa -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[22px]">description</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface leading-none">Detalle de Simulacion Activa</h3>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Resumen y documento JSON del estado actual.</span>
+</div>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-tertiary bg-tertiary/10 px-2 py-1 rounded" id="active-sim-badge">Sin simulacion cargada</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest rounded-lg p-space-sm text-[11px] font-label-code-sm text-label-code-sm text-on-surface flex flex-col gap-1.5">
+<div class="flex justify-between"><span class="text-on-surface-variant">Codigo:</span><span id="active-code">-</span></div>
+<div class="flex justify-between"><span class="text-on-surface-variant">Sesion:</span><span id="active-session">-</span></div>
+<div class="flex justify-between"><span class="text-on-surface-variant">Sim ID:</span><span id="active-sim-id">-</span></div>
+<div class="flex justify-between"><span class="text-on-surface-variant">Total pasos:</span><span id="active-total-steps">-</span></div>
+<div class="flex justify-between"><span class="text-on-surface-variant">Inicio:</span><span id="active-start-ts">-</span></div>
+<div class="flex justify-between"><span class="text-on-surface-variant">Fin:</span><span id="active-end-ts">-</span></div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm font-label-code-sm text-label-code-sm">
+<div class="text-on-surface-variant text-[11px] mb-1">Documento JSON (paso activo)</div>
+<pre class="text-[11px] text-on-surface overflow-auto max-h-[220px]" id="active-step-json">{}</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script>
+  (function() {
+    const API_BASE_URL = window.API_BASE_URL || 'https://volterra-dashboard.onrender.com'# 'http://127.0.0.1:8000';
+    const API_SIMULATION_URL = `${API_BASE_URL}/api/v1/simulations`;
+
+    const scrubber = document.getElementById('time-scrubber');
+    const timeDisplay = document.getElementById('time-display');
+    const playPauseBtn = document.getElementById('btn-play-pause');
+    const playIcon = document.getElementById('play-icon');
+    const resetBtn = document.getElementById('btn-reset');
+    const btnSimulate = document.getElementById('btn-simulate');
+    const btnSimulateText = document.getElementById('btn-simulate-text');
+    const codeInput = document.getElementById('simulation-code-input');
+    const fetchStatus = document.getElementById('fetch-status');
+    const btnExportExcel = document.getElementById('btn-export-bson');
+    const runSelector = document.getElementById('run-selector');
+    const modelSelector = document.getElementById('model-selector');
+    const activeModelName = document.getElementById('active-model-name');
+    const activeModelEquation = document.getElementById('active-model-equation');
+
+    const kpiN1 = document.getElementById('kpi-n1');
+    const kpiN2 = document.getElementById('kpi-n2');
+    const barN1 = document.getElementById('bar-n1');
+    const barN2 = document.getElementById('bar-n2');
+    const k1CapLabel = document.getElementById('k1-cap-label');
+    const k2CapLabel = document.getElementById('k2-cap-label');
+    const n1SaturationLabel = document.getElementById('n1-saturation-label');
+    const n2SaturationLabel = document.getElementById('n2-saturation-label');
+
+    const animPoint = document.getElementById('anim-point');
+    const phasePath = document.getElementById('phase-trajectory-path');
+    const equilibriumLabel = document.getElementById('equilibrium-label');
+    const equilibriumHalo = document.getElementById('equilibrium-halo');
+    const equilibriumPoint = document.getElementById('equilibrium-point');
+    const equilibriumCenter = document.getElementById('equilibrium-center');
+    const equilibriumLabelGroup = document.getElementById('equilibrium-label-group');
+    const phaseXAxisLabel = document.getElementById('phase-x-axis-label');
+    const phaseYAxisLabel = document.getElementById('phase-y-axis-label');
+    const phaseXMidLabel = document.getElementById('phase-x-mid-label');
+    const phaseXMaxLabel = document.getElementById('phase-x-max-label');
+    const phaseYQ1Label = document.getElementById('phase-y-q1-label');
+    const phaseYMidLabel = document.getElementById('phase-y-mid-label');
+    const phaseYMaxLabel = document.getElementById('phase-y-max-label');
+    const nullcline1 = document.getElementById('nullcline-1');
+    const nullcline2 = document.getElementById('nullcline-2');
+    const nullcline1Label = document.getElementById('nullcline-1-label');
+    const nullcline2Label = document.getElementById('nullcline-2-label');
+    const scenarioSection = document.getElementById('scenario-section');
+    const playbackPanel = document.getElementById('playback-panel');
+    const scenarioButtons = Array.from(document.querySelectorAll('.scenario-btn'));
+    const btnView2D = document.getElementById('btn-view-2d');
+    const btnView3D = document.getElementById('btn-view-3d');
+    const phaseView2D = document.getElementById('phase-view-2d');
+    const phaseView3D = document.getElementById('phase-view-3d');
+    const phase3DChart = document.getElementById('phase-3d-chart');
+
+    const stepsTbody = document.getElementById('steps-tbody');
+    const stepsPrev = document.getElementById('steps-prev');
+    const stepsNext = document.getElementById('steps-next');
+    const stepsPageLabel = document.getElementById('steps-page-label');
+    const temporalChartCanvas = document.getElementById('temporal-chart');
+
+    const initAlpha = document.getElementById('init-alpha');
+    const initBeta = document.getElementById('init-beta');
+    const initGamma = document.getElementById('init-gamma');
+    const initDelta = document.getElementById('init-delta');
+    const initK1 = document.getElementById('init-k1');
+    const initK2 = document.getElementById('init-k2');
+    const initPreys = document.getElementById('init-preys');
+    const initPredators = document.getElementById('init-predators');
+    const initMetaA = document.getElementById('init-meta-a');
+    const initMetaB = document.getElementById('init-meta-b');
+    const initMetaC = document.getElementById('init-meta-c');
+    const initMetaD = document.getElementById('init-meta-d');
+    const initialCardCode = document.getElementById('initial-card-code');
+
+    const activeSimBadge = document.getElementById('active-sim-badge');
+    const activeCode = document.getElementById('active-code');
+    const activeSession = document.getElementById('active-session');
+    const activeSimId = document.getElementById('active-sim-id');
+    const activeTotalSteps = document.getElementById('active-total-steps');
+    const activeStartTs = document.getElementById('active-start-ts');
+    const activeEndTs = document.getElementById('active-end-ts');
+    const activeStepJson = document.getElementById('active-step-json');
+
+    const PHASE_BOUNDS = { xMin: 45, xMax: 445, yMin: 65, yMax: 320 };
+    const PAGE_SIZE = 50;
+    const MODEL_CONFIGS = {
+      competition: {
+        name: 'Lotka-Volterra Competencia',
+        equation: 'dN1/dt = r1*N1*(1-(N1+a*N2)/K1), dN2/dt = r2*N2*(1-(N2+b*N1)/K2)',
+        nullclineLabels: ['dN1/dt = 0', 'dN2/dt = 0']
+      },
+      predation: {
+        name: 'Lotka-Volterra Predacion',
+        equation: 'dN2/dt = a*N2 - b*N2*N1, dN1/dt = d*N2*N1 - g*N1',
+        nullclineLabels: ['dN1/dt = 0', 'dN2/dt = 0']
+      }
+    };
+
+    let isPlaying = false;
+    let playInterval = null;
+    let loadedSimulationCode = null;
+    let loadedResponse = null;
+    let loadedRuns = [];
+    let activeRun = null;
+    let activeSteps = [];
+    let currentPage = 0;
+    let temporalChart = null;
+    let scrubberMarkerPlugin = null;
+    let phaseScale = { xMax: 1, yMax: 1 };
+    let activeView = '2d';
+
+    function fmt(value, digits = 2) {
+      if (value === null || value === undefined || Number.isNaN(Number(value))) return '-';
+      return Number(value).toFixed(digits);
+    }
+
+    function toNum(value, fallback = 0) {
+      const n = Number(value);
+      return Number.isFinite(n) ? n : fallback;
+    }
+
+    function isFiniteNum(value) {
+      return Number.isFinite(Number(value));
+    }
+
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    function setScenarioSectionVisible(visible) {
+      if (!scenarioSection || !playbackPanel) return;
+      if (visible) {
+        scenarioSection.classList.remove('hidden');
+        scenarioSection.classList.add('lg:col-span-7');
+        playbackPanel.classList.remove('lg:col-span-12');
+        playbackPanel.classList.add('lg:col-span-5');
+      } else {
+        scenarioSection.classList.add('hidden');
+        scenarioSection.classList.remove('lg:col-span-7');
+        playbackPanel.classList.remove('lg:col-span-5');
+        playbackPanel.classList.add('lg:col-span-12');
+      }
+    }
+
+    function setActiveScenario(scenarioKey) {
+      scenarioButtons.forEach((button) => {
+        const isActive = button.getAttribute('data-scenario') === scenarioKey;
+        button.classList.toggle('active', isActive);
+        button.classList.toggle('bg-surface-container', isActive);
+        button.classList.toggle('shadow-inner', isActive);
+        button.classList.toggle('ring-1', isActive);
+        button.classList.toggle('ring-primary/40', isActive);
+        button.classList.toggle('bg-surface-container-low', !isActive);
+      });
+    }
+
+    function classifyCompetitionScenario(params) {
+      const alpha = toNum(params.alpha, NaN);
+      const beta = toNum(params.beta, NaN);
+      const k1 = toNum(params.k1, NaN);
+      const k2 = toNum(params.k2, NaN);
+      if (!Number.isFinite(alpha) || !Number.isFinite(beta) || !Number.isFinite(k1) || !Number.isFinite(k2) || k1 <= 0 || k2 <= 0) {
+        return null;
+      }
+
+      const k1k2 = k1 / k2;
+      const k2k1 = k2 / k1;
+      const eps = 1e-9;
+      if (Math.abs(alpha - k1k2) <= eps || Math.abs(beta - k2k1) <= eps) return null;
+      if (alpha < k1k2 && beta < k2k1) return 'A';
+      if (alpha < k1k2 && beta > k2k1) return 'B';
+      if (alpha > k1k2 && beta < k2k1) return 'C';
+      if (alpha > k1k2 && beta > k2k1) return 'D';
+      return null;
+    }
+
+    function setPhaseView(viewKey) {
+      activeView = viewKey === '3d' ? '3d' : '2d';
+      const show3D = activeView === '3d';
+      if (phaseView2D) phaseView2D.classList.toggle('hidden', show3D);
+      if (phaseView3D) phaseView3D.classList.toggle('hidden', !show3D);
+      if (btnView2D) {
+        btnView2D.classList.toggle('bg-primary', !show3D);
+        btnView2D.classList.toggle('text-on-primary', !show3D);
+        btnView2D.classList.toggle('text-on-surface-variant', show3D);
+      }
+      if (btnView3D) {
+        btnView3D.classList.toggle('bg-primary', show3D);
+        btnView3D.classList.toggle('text-on-primary', show3D);
+        btnView3D.classList.toggle('text-on-surface-variant', !show3D);
+      }
+      if (show3D) renderPhase3D();
+    }
+
+    function renderPhase3D() {
+      if (!phase3DChart || typeof Plotly === 'undefined') return;
+      if (!activeSteps.length) {
+        phase3DChart.innerHTML = '<div class="w-full h-full flex items-center justify-center text-on-surface-variant text-[12px] font-label-code-sm">Sin datos para vista 3D</div>';
+        return;
+      }
+
+      const x = activeSteps.map((s) => toNum(s.predators_count));
+      const y = activeSteps.map((s) => toNum(s.preys_count));
+      const z = activeSteps.map((s) => toNum(s.time));
+      const trace = {
+        type: 'scatter3d',
+        mode: 'lines+markers',
+        x,
+        y,
+        z,
+        marker: { size: 2.5, color: '#4edea3', opacity: 0.8 },
+        line: { color: '#4cd7f6', width: 4 },
+        name: 'Trayectoria N1-N2-t'
+      };
+
+      const layout = {
+        margin: { l: 0, r: 0, b: 0, t: 10 },
+        paper_bgcolor: '#0a0e18',
+        plot_bgcolor: '#0a0e18',
+        scene: {
+          xaxis: { title: 'N1', color: '#bcc9cd', gridcolor: '#2c303b', zerolinecolor: '#2c303b' },
+          yaxis: { title: 'N2', color: '#bcc9cd', gridcolor: '#2c303b', zerolinecolor: '#2c303b' },
+          zaxis: { title: 't', color: '#bcc9cd', gridcolor: '#2c303b', zerolinecolor: '#2c303b' },
+          bgcolor: '#0a0e18',
+          camera: { eye: { x: 1.5, y: 1.5, z: 0.8 } }
+        },
+        showlegend: false
+      };
+
+      Plotly.react(phase3DChart, [trace], layout, {
+        responsive: true,
+        displaylogo: false,
+        displayModeBar: false
+      });
+    }
+
+    function percent(value, total) {
+      if (!total || total <= 0 || value === null || value === undefined) return null;
+      return Math.max(0, Math.min(100, (Number(value) / Number(total)) * 100));
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+    }
+
+    function nearestStepByTime(t) {
+      if (!activeSteps.length) return null;
+      let nearest = activeSteps[0];
+      let bestDistance = Math.abs(toNum(nearest.time) - t);
+      for (let i = 1; i < activeSteps.length; i++) {
+        const dist = Math.abs(toNum(activeSteps[i].time) - t);
+        if (dist < bestDistance) {
+          bestDistance = dist;
+          nearest = activeSteps[i];
+        }
+      }
+      return nearest;
+    }
+
+    function updateActiveDetail(step) {
+      if (!step || !activeStepJson) return;
+      activeStepJson.textContent = JSON.stringify(step, null, 2);
+    }
+
+    function detectModelFromRun(run) {
+      const eq = Number(run?.parameters?.equation);
+      if (eq === 2) return 'competition';
+      if (eq === 1) return 'predation';
+      if (isFiniteNum(run?.parameters?.k1) || isFiniteNum(run?.parameters?.k2)) return 'competition';
+      return 'predation';
+    }
+
+    function resolveModelKey(run) {
+      if (!run) return 'competition';
+      const override = modelSelector ? modelSelector.value : 'auto';
+      if (override === 'competition' || override === 'predation') return override;
+      return detectModelFromRun(run);
+    }
+
+    function updateModelHeader(run, modelKey) {
+      const model = MODEL_CONFIGS[modelKey] || MODEL_CONFIGS.competition;
+      if (activeModelName) activeModelName.textContent = model.name;
+      const eqRaw = run?.parameters?.equation;
+      if (activeModelEquation) {
+        activeModelEquation.textContent = `equation=${eqRaw === null || eqRaw === undefined ? '-' : eqRaw} | ${model.equation}`;
+      }
+    }
+
+    function buildNullclines(run, modelKey) {
+      const params = run?.parameters || {};
+      if (modelKey === 'predation') {
+        const alpha = toNum(params.alpha, NaN);
+        const beta = toNum(params.beta, NaN);
+        const gamma = toNum(params.gamma, NaN);
+        const delta = toNum(params.delta, NaN);
+        if (!Number.isFinite(alpha) || !Number.isFinite(beta) || !Number.isFinite(gamma) || !Number.isFinite(delta) || beta === 0 || delta === 0) {
+          return null;
+        }
+        return {
+          line1: { p1: { x: 0, y: gamma / delta }, p2: { x: Math.max(1, phaseScale.xMax), y: gamma / delta } },
+          line2: { p1: { x: alpha / beta, y: 0 }, p2: { x: alpha / beta, y: Math.max(1, phaseScale.yMax) } },
+          labels: MODEL_CONFIGS.predation.nullclineLabels
+        };
+      }
+
+      const k1 = toNum(params.k1, NaN);
+      const k2 = toNum(params.k2, NaN);
+      const alpha = toNum(params.alpha, NaN);
+      const beta = toNum(params.beta, NaN);
+      if (!Number.isFinite(k1) || !Number.isFinite(k2) || !Number.isFinite(alpha) || !Number.isFinite(beta)) {
+        return null;
+      }
+
+      let line1;
+      if (alpha === 0) {
+        line1 = { p1: { x: k1, y: 0 }, p2: { x: k1, y: Math.max(1, phaseScale.yMax) } };
+      } else {
+        line1 = { p1: { x: k1, y: 0 }, p2: { x: 0, y: k1 / alpha } };
+      }
+
+      let line2;
+      if (beta === 0) {
+        line2 = { p1: { x: 0, y: k2 }, p2: { x: Math.max(1, phaseScale.xMax), y: k2 } };
+      } else {
+        line2 = { p1: { x: 0, y: k2 }, p2: { x: k2 / beta, y: 0 } };
+      }
+
+      return { line1, line2, labels: MODEL_CONFIGS.competition.nullclineLabels };
+    }
+
+    function computePhaseScale(run, modelKey) {
+      const xCandidates = [1];
+      const yCandidates = [1];
+      if (Array.isArray(run?.data)) {
+        run.data.forEach((step) => {
+          const x = toNum(step.predators_count, NaN);
+          const y = toNum(step.preys_count, NaN);
+          if (Number.isFinite(x) && x >= 0) xCandidates.push(x);
+          if (Number.isFinite(y) && y >= 0) yCandidates.push(y);
+        });
+      }
+
+      const params = run?.parameters || {};
+      if (isFiniteNum(params.k1) && Number(params.k1) > 0) xCandidates.push(Number(params.k1));
+      if (isFiniteNum(params.k2) && Number(params.k2) > 0) yCandidates.push(Number(params.k2));
+
+      phaseScale = {
+        xMax: Math.max(...xCandidates) * 1.1,
+        yMax: Math.max(...yCandidates) * 1.1
+      };
+
+      const nullclines = buildNullclines(run, modelKey);
+      if (nullclines) {
+        [nullclines.line1.p1, nullclines.line1.p2, nullclines.line2.p1, nullclines.line2.p2].forEach((p) => {
+          if (Number.isFinite(p.x) && p.x >= 0) phaseScale.xMax = Math.max(phaseScale.xMax, p.x * 1.05);
+          if (Number.isFinite(p.y) && p.y >= 0) phaseScale.yMax = Math.max(phaseScale.yMax, p.y * 1.05);
+        });
+      }
+
+      phaseScale.xMax = Math.max(phaseScale.xMax, 1);
+      phaseScale.yMax = Math.max(phaseScale.yMax, 1);
+      return nullclines;
+    }
+
+    function mapPhaseX(predatorsValue) {
+      const raw = PHASE_BOUNDS.xMin + (toNum(predatorsValue) / Math.max(phaseScale.xMax, 1)) * (PHASE_BOUNDS.xMax - PHASE_BOUNDS.xMin);
+      return clamp(raw, PHASE_BOUNDS.xMin, PHASE_BOUNDS.xMax);
+    }
+
+    function mapPhaseY(preysValue) {
+      const raw = PHASE_BOUNDS.yMax - (toNum(preysValue) / Math.max(phaseScale.yMax, 1)) * (PHASE_BOUNDS.yMax - PHASE_BOUNDS.yMin);
+      return clamp(raw, PHASE_BOUNDS.yMin, PHASE_BOUNDS.yMax);
+    }
+
+    function updateState(tVal) {
+      const t = parseFloat(tVal || 0);
+      if (timeDisplay) timeDisplay.textContent = `t = ${t.toFixed(2)}`;
+
+      const step = nearestStepByTime(t);
+      if (!step) return;
+
+      const nPredators = toNum(step.predators_count);
+      const nPreys = toNum(step.preys_count);
+
+      if (kpiN1) kpiN1.textContent = nPredators.toFixed(1);
+      if (kpiN2) kpiN2.textContent = nPreys.toFixed(1);
+
+      const k1 = toNum(activeRun?.parameters?.k1, phaseScale.xMax);
+      const k2 = toNum(activeRun?.parameters?.k2, phaseScale.yMax);
+      if (barN1) barN1.style.width = `${Math.min(100, (nPredators / Math.max(k1, 1)) * 100)}%`;
+      if (barN2) barN2.style.width = `${Math.min(100, (nPreys / Math.max(k2, 1)) * 100)}%`;
+
+      // Phase convention requested by user: X = predators_count, Y = preys_count
+      const svgX = mapPhaseX(nPredators);
+      const svgY = mapPhaseY(nPreys);
+      if (animPoint) {
+        animPoint.setAttribute('cx', String(svgX));
+        animPoint.setAttribute('cy', String(svgY));
+      }
+
+      updateActiveDetail(step);
+      renderTemporalChart();
+    }
+
+    function buildPhasePath(steps) {
+      if (!steps.length) return '';
+      const segments = steps.map((s, idx) => {
+        // Phase convention requested by user: X = predators_count, Y = preys_count
+        const x = mapPhaseX(s.predators_count);
+        const y = mapPhaseY(s.preys_count);
+        return `${idx === 0 ? 'M' : 'L'} ${x.toFixed(2)} ${y.toFixed(2)}`;
+      });
+      return segments.join(' ');
+    }
+
+    function renderTemporalChart() {
+      if (!temporalChartCanvas || typeof Chart === 'undefined' || !activeSteps.length) return;
+      const labels = activeSteps.map((step) => toNum(step.time).toFixed(3));
+      const n1Data = activeSteps.map((step) => toNum(step.predators_count));
+      const n2Data = activeSteps.map((step) => toNum(step.preys_count));
+
+      const scrubberTime = toNum(scrubber ? scrubber.value : 0);
+      let markerIndex = 0;
+      let markerDist = Infinity;
+      for (let i = 0; i < activeSteps.length; i++) {
+        const d = Math.abs(toNum(activeSteps[i].time) - scrubberTime);
+        if (d < markerDist) {
+          markerDist = d;
+          markerIndex = i;
+        }
+      }
+
+      if (!scrubberMarkerPlugin) {
+        scrubberMarkerPlugin = {
+          id: 'scrubberMarker',
+          afterDatasetsDraw(chart) {
+            const idx = chart.options.plugins?.scrubberMarker?.index;
+            if (idx === undefined || idx === null) return;
+            const meta = chart.getDatasetMeta(0);
+            const point = meta?.data?.[idx];
+            if (!point) return;
+            const x = point.x;
+            const yTop = chart.chartArea.top;
+            const yBottom = chart.chartArea.bottom;
+            const ctx = chart.ctx;
+            ctx.save();
+            ctx.setLineDash([4, 3]);
+            ctx.strokeStyle = '#4edea3';
+            ctx.lineWidth = 1.2;
+            ctx.beginPath();
+            ctx.moveTo(x, yTop);
+            ctx.lineTo(x, yBottom);
+            ctx.stroke();
+            ctx.restore();
+          }
+        };
+      }
+
+      if (!temporalChart) {
+        temporalChart = new Chart(temporalChartCanvas, {
+          type: 'line',
+          plugins: [scrubberMarkerPlugin],
+          data: {
+            labels,
+            datasets: [
+              { label: 'N1', data: n1Data, borderColor: '#4cd7f6', pointRadius: 0, tension: 0.2 },
+              { label: 'N2', data: n2Data, borderColor: '#d0bcff', pointRadius: 0, tension: 0.2 }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: false,
+            plugins: {
+              legend: { labels: { color: '#bcc9cd' } },
+              scrubberMarker: { index: markerIndex }
+            },
+            scales: {
+              x: { ticks: { color: '#869397', maxTicksLimit: 8 }, grid: { color: '#2c303b' } },
+              y: { ticks: { color: '#869397' }, grid: { color: '#2c303b' } }
+            }
+          }
+        });
+      } else {
+        temporalChart.data.labels = labels;
+        temporalChart.data.datasets[0].data = n1Data;
+        temporalChart.data.datasets[1].data = n2Data;
+        temporalChart.options.plugins.scrubberMarker.index = markerIndex;
+        temporalChart.update();
+      }
+    }
+
+    function renderStepsTable(page = currentPage) {
+      currentPage = Math.max(0, page);
+      if (!stepsTbody) return;
+      if (!activeSteps.length) {
+        stepsTbody.innerHTML = '<tr><td class="px-space-sm py-2" colspan="5">Sin datos cargados</td></tr>';
+        if (stepsPageLabel) stepsPageLabel.textContent = 'Pagina 1';
+        if (stepsPrev) stepsPrev.disabled = true;
+        if (stepsNext) stepsNext.disabled = true;
+        return;
+      }
+
+      const totalPages = Math.ceil(activeSteps.length / PAGE_SIZE);
+      if (currentPage >= totalPages) currentPage = totalPages - 1;
+      const start = currentPage * PAGE_SIZE;
+      const end = Math.min(start + PAGE_SIZE, activeSteps.length);
+      const rows = activeSteps.slice(start, end).map((step) => (
+        `<tr class="border-t border-surface-container-high"><td class="px-space-sm py-1.5">${escapeHtml(step.step)}</td><td class="px-space-sm py-1.5">${escapeHtml(fmt(step.time, 3))}</td><td class="px-space-sm py-1.5">${escapeHtml(fmt(step.preys_count, 2))}</td><td class="px-space-sm py-1.5">${escapeHtml(fmt(step.predators_count, 2))}</td><td class="px-space-sm py-1.5">${escapeHtml(step.timestamp_utc || '-')}</td></tr>`
+      )).join('');
+
+      stepsTbody.innerHTML = rows;
+      if (stepsPageLabel) stepsPageLabel.textContent = `Pagina ${currentPage + 1} / ${totalPages}`;
+      if (stepsPrev) stepsPrev.disabled = currentPage === 0;
+      if (stepsNext) stepsNext.disabled = currentPage >= totalPages - 1;
+    }
+
+    function updateDashboardFromRun(run, summary) {
+      if (!run || !Array.isArray(run.data) || run.data.length === 0) return;
+      const params = run.parameters || {};
+      const initial = run.initial_conditions || {};
+      const runSummary = run.summary || {};
+      const lastStep = run.data[run.data.length - 1];
+      const modelKey = resolveModelKey(run);
+      updateModelHeader(run, modelKey);
+      const nullclines = computePhaseScale(run, modelKey);
+
+      if (kpiN1) kpiN1.textContent = fmt(lastStep.predators_count, 1);
+      if (kpiN2) kpiN2.textContent = fmt(lastStep.preys_count, 1);
+
+      const satN1 = percent(lastStep.predators_count, toNum(params.k1, phaseScale.xMax));
+      const satN2 = percent(lastStep.preys_count, toNum(params.k2, phaseScale.yMax));
+      if (satN1 !== null && barN1) barN1.style.width = `${satN1.toFixed(2)}%`;
+      if (satN2 !== null && barN2) barN2.style.width = `${satN2.toFixed(2)}%`;
+      if (satN1 !== null && n1SaturationLabel) n1SaturationLabel.textContent = `${satN1.toFixed(1)}%`;
+      if (satN2 !== null && n2SaturationLabel) n2SaturationLabel.textContent = `${satN2.toFixed(1)}%`;
+      if (k1CapLabel) k1CapLabel.textContent = `/ ${isFiniteNum(params.k1) ? `K1 = ${fmt(params.k1, 0)}` : `escala X = ${fmt(phaseScale.xMax, 0)}`}`;
+      if (k2CapLabel) k2CapLabel.textContent = `/ ${isFiniteNum(params.k2) ? `K2 = ${fmt(params.k2, 0)}` : `escala Y = ${fmt(phaseScale.yMax, 0)}`}`;
+
+      if (initAlpha) initAlpha.textContent = fmt(params.alpha, 3);
+      if (initBeta) initBeta.textContent = fmt(params.beta, 3);
+      if (initGamma) initGamma.textContent = fmt(params.gamma, 3);
+      if (initDelta) initDelta.textContent = fmt(params.delta, 3);
+      if (initK1) initK1.textContent = fmt(params.k1, 0);
+      if (initK2) initK2.textContent = fmt(params.k2, 0);
+      if (initPreys) initPreys.textContent = fmt(initial.preys, 2);
+      if (initPredators) initPredators.textContent = fmt(initial.predators, 2);
+      if (initMetaA) initMetaA.textContent = `equation: ${params.equation ?? '-'}`;
+      if (initMetaB) initMetaB.textContent = `delta_t: ${fmt(params.delta_t, 3)}`;
+      if (initMetaC) initMetaC.textContent = `invader: ${params.with_invader === null || params.with_invader === undefined ? '-' : String(params.with_invader)}`;
+      if (initMetaD) initMetaD.textContent = `stochastic: ${params.stochastic === null || params.stochastic === undefined ? '-' : String(params.stochastic)}`;
+      if (initialCardCode) initialCardCode.textContent = loadedSimulationCode || '-';
+
+      if (activeSimBadge) activeSimBadge.textContent = `Codigo ${loadedSimulationCode || '-'} cargado`;
+      if (activeCode) activeCode.textContent = loadedSimulationCode || '-';
+      if (activeSession) activeSession.textContent = `${loadedResponse?.session?.session_id || '-'} / ${loadedResponse?.session?.device_id || '-'}`;
+      if (activeSimId) activeSimId.textContent = String(run.sim_id ?? '-');
+      if (activeTotalSteps) activeTotalSteps.textContent = String(runSummary.total_steps ?? run.data.length);
+      if (activeStartTs) activeStartTs.textContent = runSummary.first_timestamp_utc || '-';
+      if (activeEndTs) activeEndTs.textContent = runSummary.last_timestamp_utc || '-';
+      updateActiveDetail(lastStep);
+
+      if (phasePath) {
+        const d = buildPhasePath(run.data);
+        if (d) phasePath.setAttribute('d', d);
+      }
+      if (equilibriumLabel) {
+        const finalPred = toNum(lastStep.predators_count, toNum(runSummary.predator_final, 0));
+        const finalPrey = toNum(lastStep.preys_count, toNum(runSummary.prey_final, 0));
+        equilibriumLabel.textContent = `Final (${fmt(finalPred, 0)}, ${fmt(finalPrey, 0)})`;
+
+        const finalX = mapPhaseX(finalPred);
+        const finalY = mapPhaseY(finalPrey);
+
+        if (equilibriumHalo) {
+          equilibriumHalo.setAttribute('cx', String(finalX));
+          equilibriumHalo.setAttribute('cy', String(finalY));
+        }
+        if (equilibriumPoint) {
+          equilibriumPoint.setAttribute('cx', String(finalX));
+          equilibriumPoint.setAttribute('cy', String(finalY));
+        }
+        if (equilibriumCenter) {
+          equilibriumCenter.setAttribute('cx', String(finalX));
+          equilibriumCenter.setAttribute('cy', String(finalY));
+        }
+
+        if (equilibriumLabelGroup) {
+          const labelX = Math.min(410, Math.max(55, finalX + 16));
+          const labelY = Math.min(300, Math.max(28, finalY - 12));
+          equilibriumLabelGroup.setAttribute('transform', `translate(${labelX}, ${labelY})`);
+        }
+      }
+
+      if (phaseYAxisLabel) phaseYAxisLabel.textContent = 'N2 (Y)';
+      if (phaseXAxisLabel) phaseXAxisLabel.textContent = 'N1 (X)';
+      if (phaseXMidLabel) phaseXMidLabel.textContent = fmt(phaseScale.xMax / 2, 0);
+      if (phaseXMaxLabel) phaseXMaxLabel.textContent = `${fmt(phaseScale.xMax, 0)} (escala X)`;
+      if (phaseYQ1Label) phaseYQ1Label.textContent = fmt(phaseScale.yMax / 4, 0);
+      if (phaseYMidLabel) phaseYMidLabel.textContent = fmt(phaseScale.yMax / 2, 0);
+      if (phaseYMaxLabel) phaseYMaxLabel.textContent = `${fmt(phaseScale.yMax, 0)} (escala Y)`;
+
+      if (nullclines) {
+        const drawLine = (lineEl, labelEl, lineData, labelText) => {
+          if (!lineEl || !lineData) return;
+          const x1 = mapPhaseX(lineData.p1.x);
+          const y1 = mapPhaseY(lineData.p1.y);
+          const x2 = mapPhaseX(lineData.p2.x);
+          const y2 = mapPhaseY(lineData.p2.y);
+          lineEl.setAttribute('x1', String(x1));
+          lineEl.setAttribute('y1', String(y1));
+          lineEl.setAttribute('x2', String(x2));
+          lineEl.setAttribute('y2', String(y2));
+          if (labelEl) {
+            labelEl.textContent = labelText;
+            labelEl.setAttribute('x', String((x1 + x2) / 2));
+            labelEl.setAttribute('y', String(clamp((y1 + y2) / 2 - 8, PHASE_BOUNDS.yMin + 8, PHASE_BOUNDS.yMax - 8)));
+          }
+        };
+        drawLine(nullcline1, nullcline1Label, nullclines.line1, nullclines.labels[0]);
+        drawLine(nullcline2, nullcline2Label, nullclines.line2, nullclines.labels[1]);
+      } else {
+        if (nullcline1) {
+          nullcline1.setAttribute('x1', String(PHASE_BOUNDS.xMin));
+          nullcline1.setAttribute('y1', String(PHASE_BOUNDS.yMax));
+          nullcline1.setAttribute('x2', String(PHASE_BOUNDS.xMin));
+          nullcline1.setAttribute('y2', String(PHASE_BOUNDS.yMax));
+        }
+        if (nullcline2) {
+          nullcline2.setAttribute('x1', String(PHASE_BOUNDS.xMin));
+          nullcline2.setAttribute('y1', String(PHASE_BOUNDS.yMax));
+          nullcline2.setAttribute('x2', String(PHASE_BOUNDS.xMin));
+          nullcline2.setAttribute('y2', String(PHASE_BOUNDS.yMax));
+        }
+        if (nullcline1Label) nullcline1Label.textContent = 'Isoclina no disponible';
+        if (nullcline2Label) nullcline2Label.textContent = '';
+      }
+
+      const isCompetition = modelKey === 'competition';
+      setScenarioSectionVisible(isCompetition);
+      if (isCompetition) {
+        const scenario = classifyCompetitionScenario(params);
+        setActiveScenario(scenario);
+      }
+
+      renderTemporalChart();
+      if (activeView === '3d') renderPhase3D();
+
+      if (fetchStatus && summary) {
+        fetchStatus.textContent = `Cargadas ${summary.total_simulations} simulaciones, ${summary.total_steps} pasos.`;
+      }
+    }
+
+    function syncScrubberToStep(stepIndex) {
+      if (!scrubber || !activeSteps.length) return;
+      const bounded = Math.max(0, Math.min(stepIndex, activeSteps.length - 1));
+      const t = toNum(activeSteps[bounded].time);
+      const maxT = Math.max(...activeSteps.map((s) => toNum(s.time, 0)));
+      scrubber.min = '0';
+      scrubber.max = String(maxT > 0 ? maxT : activeSteps.length - 1);
+      scrubber.step = '0.001';
+      scrubber.value = String(t);
+      updateState(scrubber.value);
+    }
+
+    function populateRunSelector(simulations) {
+      if (!runSelector) return;
+      runSelector.innerHTML = '';
+      simulations.forEach((run, idx) => {
+        const modelKey = detectModelFromRun(run);
+        const eqVal = run?.parameters?.equation;
+        const option = document.createElement('option');
+        option.value = String(idx);
+        option.textContent = `Sim ${idx + 1} (id:${run?.sim_id ?? '-'}, eq:${eqVal ?? '-'}) | ${MODEL_CONFIGS[modelKey].name}`;
+        runSelector.appendChild(option);
+      });
+    }
+
+    function activateRun(index) {
+      const i = Math.max(0, Math.min(index, loadedRuns.length - 1));
+      activeRun = loadedRuns[i] || null;
+      activeSteps = Array.isArray(activeRun?.data) ? activeRun.data : [];
+      if (runSelector) runSelector.value = String(i);
+      if (!activeRun || !activeSteps.length) {
+        renderStepsTable(0);
+        if (fetchStatus) fetchStatus.textContent = 'Corrida seleccionada sin pasos.';
+        return;
+      }
+      updateDashboardFromRun(activeRun, loadedResponse?.summary);
+      renderStepsTable(0);
+      syncScrubberToStep(activeSteps.length - 1);
+    }
+
+    if (stepsPrev) stepsPrev.addEventListener('click', () => renderStepsTable(currentPage - 1));
+    if (stepsNext) stepsNext.addEventListener('click', () => renderStepsTable(currentPage + 1));
+    if (runSelector) runSelector.addEventListener('change', (e) => activateRun(toNum(e.target.value, 0)));
+    if (modelSelector) modelSelector.addEventListener('change', () => {
+      if (activeRun) updateDashboardFromRun(activeRun, loadedResponse?.summary);
+    });
+    if (btnView2D) btnView2D.addEventListener('click', () => setPhaseView('2d'));
+    if (btnView3D) btnView3D.addEventListener('click', () => setPhaseView('3d'));
+
+    if (scrubber) {
+      scrubber.addEventListener('input', (e) => {
+        updateState(e.target.value);
+      });
+    }
+
+    if (playPauseBtn && scrubber) {
+      playPauseBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        if (isPlaying) {
+          if (playIcon) playIcon.textContent = 'pause';
+          playInterval = setInterval(() => {
+            const maxVal = toNum(scrubber.max, 100);
+            const step = Math.max(0.05, maxVal / 250);
+            let val = toNum(scrubber.value) + step;
+            if (val > maxVal) val = 0;
+            scrubber.value = String(val);
+            updateState(val);
+          }, 80);
+        } else {
+          if (playIcon) playIcon.textContent = 'play_arrow';
+          clearInterval(playInterval);
+        }
+      });
+    }
+
+    if (resetBtn && scrubber) {
+      resetBtn.addEventListener('click', () => {
+        scrubber.value = scrubber.min || '0';
+        updateState(scrubber.value);
+      });
+    }
+
+    if (btnExportExcel) {
+      btnExportExcel.addEventListener('click', () => {
+        if (!loadedSimulationCode) {
+          if (fetchStatus) fetchStatus.textContent = 'Primero carga una simulacion para descargar su Excel.';
+          return;
+        }
+        window.open(`${API_BASE_URL}/download-logs/${encodeURIComponent(loadedSimulationCode)}`, '_blank');
+      });
+    }
+
+    if (btnSimulate) {
+      btnSimulate.addEventListener('click', async () => {
+        btnSimulate.classList.add('ring-2', 'ring-primary');
+        setTimeout(() => btnSimulate.classList.remove('ring-2', 'ring-primary'), 400);
+
+        const rawCode = codeInput ? codeInput.value.trim() : '';
+        if (!rawCode) {
+          if (fetchStatus) fetchStatus.textContent = 'Codigo vacio: escribe un codigo valido.';
+          return;
+        }
+
+        btnSimulate.disabled = true;
+        if (btnSimulateText) btnSimulateText.textContent = 'Cargando...';
+        if (fetchStatus) fetchStatus.textContent = 'Consultando API...';
+
+        try {
+          const resp = await fetch(`${API_SIMULATION_URL}/${encodeURIComponent(rawCode)}`, {
+            method: 'GET',
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (!resp.ok) {
+            let detail = 'Error de conexion';
+            try {
+              const body = await resp.json();
+              if (body && body.detail) detail = body.detail;
+            } catch (_) {}
+
+            if (resp.status === 404) {
+              if (fetchStatus) fetchStatus.textContent = `Codigo no encontrado: ${detail}`;
+            } else if (resp.status === 400 || resp.status === 422) {
+              if (fetchStatus) fetchStatus.textContent = `Codigo invalido: ${detail}`;
+            } else {
+              if (fetchStatus) fetchStatus.textContent = `Error API (${resp.status}): ${detail}`;
+            }
+            return;
+          }
+
+          const data = await resp.json();
+          if (!data || !Array.isArray(data.simulations) || data.simulations.length === 0) {
+            if (fetchStatus) fetchStatus.textContent = 'Respuesta sin datos de simulacion.';
+            return;
+          }
+
+          loadedSimulationCode = rawCode;
+          loadedResponse = data;
+          loadedRuns = data.simulations;
+          populateRunSelector(loadedRuns);
+          if (!loadedRuns.length) {
+            renderStepsTable(0);
+            if (fetchStatus) fetchStatus.textContent = 'Simulacion cargada pero sin corridas.';
+            return;
+          }
+          activateRun(0);
+          if (fetchStatus) fetchStatus.textContent = `Simulacion ${rawCode} cargada correctamente.`;
+        } catch (_) {
+          if (fetchStatus) fetchStatus.textContent = 'Error de conexion con la API.';
+        } finally {
+          btnSimulate.disabled = false;
+          if (btnSimulateText) btnSimulateText.textContent = 'Cargar Simulacion';
+        }
+      });
+    }
+
+    setPhaseView('2d');
+    renderStepsTable(0);
+  })();
+</script></main></div></body></html>
